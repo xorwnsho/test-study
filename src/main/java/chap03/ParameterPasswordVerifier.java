@@ -8,11 +8,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UntestablePasswordVerifier {
+public class ParameterPasswordVerifier {
 
     private final List<PasswordValidationRule> rules;
 
-    public UntestablePasswordVerifier() {
+    public ParameterPasswordVerifier() {
         rules = new ArrayList<>();
     }
 
@@ -20,8 +20,7 @@ public class UntestablePasswordVerifier {
         rules.add(passwordValidationRule);
     }
 
-    public List<String> verifyPassword(String input){
-        DayOfWeek day = LocalDate.now().getDayOfWeek();
+    public List<String> verifyPassword(String input, DayOfWeek day){
 
         if(day == DayOfWeek.SATURDAY || day == DayOfWeek.SUNDAY){
             throw new IllegalStateException("It's the weekend!");
