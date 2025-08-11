@@ -11,6 +11,7 @@ public class PasswordVerifier {
         rules = new ArrayList<>();
     }
 
+
     public void addRule(PasswordValidationRule passwordValidationRule) {
         rules.add(passwordValidationRule);
     }
