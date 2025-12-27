@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.DayOfWeek;
 import java.util.function.Supplier;
+import java.util.logging.Logger;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
